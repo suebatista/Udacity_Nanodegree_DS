@@ -8,7 +8,7 @@ Since the interest in data science is inscreasing, this project will help people
 2.   What's the most frequent salary estimate?
 3.   Which cities offer more job opportunities?
 
-
+The results are also published on this [Medium post](https://xscbsx.medium.com/whats-the-current-scenario-of-data-scientist-job-opportunities-5dd31e1f59c8)
 
 ## Data Understanding
 The  data used in this project was provided by the user [pickesueat](https://github.com/picklesueat/data_jobs_data), who collected data from the website [Glassdoor](wwww.glassdoor.com) using webscrapping techniques. I refined some categories (column _Industry_) from the original file using Talend, so I could visualize the results in a better way.
