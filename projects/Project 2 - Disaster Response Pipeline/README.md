@@ -75,8 +75,8 @@ Change the performance metrics (focus more on Recall and F1-score: weighted aver
 Generate Synthetic Data
 Use Different Algorithms such as multilabel algorithms that take into account that labels may be connected and may not be mutually exclusive.
 Use Penalized Classification Algorithms
-Licensing, Authors, and Acknowledgements
-This project is licensed under the MIT License - see the LICENSE.md file for details
+#Licensing, Authors, and Acknowledgements
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/xscbsx/Udacity_Nanodegree_DS/blob/main/LICENSE) file for details
 
 Instructions
 Run the following commands in the project's root directory to set up your database and model.
