@@ -76,7 +76,7 @@ Generate Synthetic Data
 Use Different Algorithms such as multilabel algorithms that take into account that labels may be connected and may not be mutually exclusive.
 Use Penalized Classification Algorithms
 Licensing, Authors, and Acknowledgements
-Thanks to Udacity for the starter code and FigureEight for providing the data set to be used by this project.
+This project is licensed under the MIT License - see the LICENSE.md file for details
 
 Instructions
 Run the following commands in the project's root directory to set up your database and model.
