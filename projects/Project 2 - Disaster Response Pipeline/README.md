@@ -25,7 +25,7 @@ All libraries are available in Anaconda distribution of Python. The used librari
 The code should run using Python versions 3.*.
 
 
-## Project Description <a name="project_description"></a>
+## Project Description <a name="description"></a>
 
 Project Description
 Figure Eight Data Set: Disaster Response Messages provides thousands of messages that have been sorted into 36 categories. These messages are sorted into specific categories such as Water, Hospitals, Aid-Related, that are specifically aimed at helping emergency personnel in their aid efforts.
@@ -34,6 +34,26 @@ The main goal of this project is to build an app that can help emergency workers
 
 File Description
 There are three main folders:
+
+
+## 3. File Descriptions
+- \
+	- README.md
+	- ETL Pipeline Preparation.ipynb
+	- ML Pipeline Preparation.ipynb
+- \app
+	- run.py
+	- \templates
+	   - go.html
+	   - master.html
+- \data
+	- DisasterResponse.db - output of the ETL pipeline, i.e. SQLite database containing messages and categories data
+	- disaster_categories.csv - dataset including all the categories
+	- disaster_messages.csv - dataset including all the messages
+	- process_data.py - ETL pipeline scripts to read, clean, and save data into a database
+- \models
+	- classifier.pkl -- output of the machine learning pipeline, i.e. a trained classifier 
+	- train_classifier.py - machine learning pipeline scripts to train and export a classifier
 
 *data*
 disaster_categories.csv: dataset including all the categories
@@ -89,16 +109,18 @@ This project is licensed under the MIT License - see the [LICENSE.md](https://gi
 
 ## Instructions <a name="instructions"></a>
 
-1. Run the following commands in the project's root directory to set up your database and model.
 
-    - To run ETL pipeline that cleans data and stores in database
-        `python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db`
-    - To run ML pipeline that trains classifier and saves
-        `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`
+     1. Run the following commands in the project's root directory to set up your database and model.
 
-2. Run the following command in the app's directory to run your web app.
-    `python run.py`
+         - To run ETL pipeline that cleans data and stores in database
+             `python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db`
+         - To run ML pipeline that trains classifier and saves
+             `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`
 
-3. Go to http://0.0.0.0:3001/
+     2. Run the following command in the app's directory to run your web app.
+         `python run.py`
+
+     3. Go to http://0.0.0.0:3001/
+     
 
 
