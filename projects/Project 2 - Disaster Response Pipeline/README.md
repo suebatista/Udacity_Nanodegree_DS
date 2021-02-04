@@ -1,24 +1,32 @@
-Disaster Response Message Classification Pipelines
-Table of Contents
-Libraries
-Project Description
-File Description
-Analysis
-Results
-Future Improvements
-Licensing, Authors, and Acknowledgements
-Instructions
-Libraries
-pandas
-numpy
-sqlalchemy
-matplotlib
-plotly
-NLTK
-NLTK [punkt, wordnet, stopwords]
-sklearn
-joblib
-flask
+### Table of Contents
+
+1. [Installation](#installation)
+2. [Project Motivation](#motivation)
+3. [Project Descriptions](#descriptions)
+4. [Files Descriptions](#files)
+5. [Instructions](#instructions)
+
+## Installation <a name="installation"></a>
+
+All libraries are available in Anaconda distribution of Python. The used libraries are:
+
+- pandas
+- re
+- sys
+- json
+- sklearn
+- nltk
+- sqlalchemy
+- pickle
+- Flask
+- plotly
+- sqlite3
+
+The code should run using Python versions 3.*.
+
+
+## Project Description <a name="project_description"></a>
+
 Project Description
 Figure Eight Data Set: Disaster Response Messages provides thousands of messages that have been sorted into 36 categories. These messages are sorted into specific categories such as Water, Hospitals, Aid-Related, that are specifically aimed at helping emergency personnel in their aid efforts.
 
@@ -27,7 +35,7 @@ The main goal of this project is to build an app that can help emergency workers
 File Description
 There are three main folders:
 
-data
+*data*
 disaster_categories.csv: dataset including all the categories
 disaster_messages.csv: dataset including all the messages
 process_data.py: ETL pipeline scripts to read, clean, and save data into a database
@@ -78,11 +86,19 @@ Use Penalized Classification Algorithms
 #Licensing, Authors, and Acknowledgements
 This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/xscbsx/Udacity_Nanodegree_DS/blob/main/LICENSE) file for details
 
-Instructions
-Run the following commands in the project's root directory to set up your database and model.
 
-To run ETL pipeline that cleans data and stores in database python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db
-To run ML pipeline that trains classifier and saves model python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl
-Run the following command in the app's directory to run your web app. python run.py
+## Instructions <a name="instructions"></a>
 
-Go to http://0.0.0.0:3001/
+1. Run the following commands in the project's root directory to set up your database and model.
+
+    - To run ETL pipeline that cleans data and stores in database
+        `python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db`
+    - To run ML pipeline that trains classifier and saves
+        `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`
+
+2. Run the following command in the app's directory to run your web app.
+    `python run.py`
+
+3. Go to http://0.0.0.0:3001/
+
+
